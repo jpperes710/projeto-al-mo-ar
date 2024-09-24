@@ -1,4 +1,4 @@
-import { times } from "./data.js";
+import { times } from "../../data/data.js";
 
 const tbodyJogadores = document.getElementById('tbody-jogadores');
 const inputPesquisar = document.getElementById('input-pesquisar');
@@ -20,5 +20,7 @@ for (const jogador of alMocar.jogadores) {
 
 
 btnPesquisar.addEventListener('click', () => {
-    alert(inputPesquisar.value);
+    tbodyJogadores.innerHTML = "";
+
+    // ABAIXO vai exibir apenas o jogador pesquisado.
 })
