@@ -7,9 +7,8 @@
 - git push (envia para o github)
 - git pull (atualiza as modificações que estão no github para o seu computador)
 
-
-
 ### Tasks
 
-* [ ]  Conseguir pesquisar um dos nossos jogadores.
+* [X]  Conseguir pesquisar um dos nossos jogadores.
+* [ ]  Procurar jogadores por Nível e Posição
 * [ ]  Começar a construir a pagina de mercado
