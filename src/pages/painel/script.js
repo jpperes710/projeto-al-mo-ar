@@ -46,6 +46,42 @@ btnPesquisar.addEventListener('click', () => {
                 
             </tr> `
         }
+
+        if (jogador.nivel == inputPesquisar.value) {
+            tbodyJogadores.innerHTML += `
+            <tr>
+                <td>${jogador.posicao}</td>
+                <td>${jogador.nome}</td>
+                <td>${jogador.idade}</td>
+                <td>${jogador.nivel}</td>
+                <td>${jogador.preco}</td>
+                
+            </tr> `
+        }
+
+        if (jogador.posicao == inputPesquisar.value) {
+            tbodyJogadores.innerHTML += `
+            <tr>
+                <td>${jogador.posicao}</td>
+                <td>${jogador.nome}</td>
+                <td>${jogador.idade}</td>
+                <td>${jogador.nivel}</td>
+                <td>${jogador.preco}</td>
+                
+            </tr> `
+        }
+
+        if (jogador.preco == inputPesquisar.value) {
+            tbodyJogadores.innerHTML += `
+            <tr>
+                <td>${jogador.posicao}</td>
+                <td>${jogador.nome}</td>
+                <td>${jogador.idade}</td>
+                <td>${jogador.nivel}</td>
+                <td>${jogador.preco}</td>
+                
+            </tr> `
+        }
     }
     // ABAIXO vai exibir apenas o jogador pesquisado.
 })
