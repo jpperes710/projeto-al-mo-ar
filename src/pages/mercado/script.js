@@ -18,7 +18,8 @@ inputPesquisa.addEventListener('input', function (event) {
     for (const jogador of jogadores) {
         if (jogador.nome.includes(event.target.value)) {
             divResultadoPesquisa.innerHTML += `
-                <p>${jogador.nome}</p>
+                <p>${jogador.nome} </p>
+                <p>${jogador.idade}</p>
             `
         }
     }
