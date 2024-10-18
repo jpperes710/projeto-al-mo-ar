@@ -18,8 +18,14 @@ inputPesquisa.addEventListener('input', function (event) {
     for (const jogador of jogadores) {
         if (jogador.nome.includes(event.target.value)) {
             divResultadoPesquisa.innerHTML += `
-                <p>${jogador.nome} </p>
-                <p>${jogador.idade}</p>
+            <tr>
+                <td>${jogador.nome} </td>
+                <td class= "text-center">${jogador.nivel}</td>
+                <td class= "text-center">${jogador.idade}</td>
+                <td>${jogador.preco}</td>
+                <td><button class= "btn btn-success">Negociar</button></td>
+                 
+            </tr>
             `
         }
     }
