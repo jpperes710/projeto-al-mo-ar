@@ -10,6 +10,8 @@
 ### Tasks
 
 * [X]  Conseguir pesquisar um dos nossos jogadores.
-* [x ]  Procurar jogadores por Nível e Posição
-* [x ]  Começar a construir a pagina de mercado
-* [  ]  pagina de negociação de transferencia 
+* [ ]  Procurar jogadores por Nível e Posição
+* [ ]  Começar a construir a pagina de mercado
+
+
+
