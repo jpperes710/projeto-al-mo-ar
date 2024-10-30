@@ -12,3 +12,6 @@
 * [X]  Conseguir pesquisar um dos nossos jogadores.
 * [ ]  Procurar jogadores por Nível e Posição
 * [ ]  Começar a construir a pagina de mercado
+
+
+
