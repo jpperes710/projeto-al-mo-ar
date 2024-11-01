@@ -1,17 +1,8 @@
-import { times } from "../../data/data.js";
+import { jogadores } from "../../data/newData.js";
 
 const inputPesquisa = document.getElementById('input-pesquisa');
 const divResultadoPesquisa = document.getElementById('resultado-pesquisa');
 
-// INICIANDO o código para criar a lista de todos os jogadores
-const jogadores = []; // <- TODOS OS JOGADORES ESTÃO DENTRO DESSA VARIAVEL(LISTA)
-
-for (const time of times) {
-    for (const jogador of time.jogadores) {
-        jogadores.push(jogador)
-    }
-};
-// ENCERRANDO o código que cria a lista de todos os jogadores
 
 inputPesquisa.addEventListener('input', function (event) {
     divResultadoPesquisa.innerHTML = "";
@@ -24,7 +15,7 @@ inputPesquisa.addEventListener('input', function (event) {
                 <td class= "text-center">${jogador.nivel}</td>
                 <td class= "text-center">${jogador.idade}</td>
                 <td>${jogador.preco}</td>
-                <td><a href="../negociar/negociar.html?nome=${jogador.nome}">Negociar</a></td>
+                <td><a class="btn btn-success" href="../negociar/negociar.html?id=${jogador.id_jogador}">Negociar</a></td>
             </tr>
             `
         }

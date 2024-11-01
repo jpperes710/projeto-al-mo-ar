@@ -1,24 +1,35 @@
-import { times } from "../../data/data.js";
+import { jogadores } from "../../data/newData.js";
 
+// Pegando da URL o parametro id
 const parametros = new URLSearchParams(window.location.search);
-const nome = parametros.get('nome');
+const id_jogador = parametros.get('id');
+// Encerrando Pegando da URL o parametro id
 
 const divJogador = document.getElementById('div-jogador');
 
-// INICIANDO o código para criar a lista de todos os jogadores
-const jogadores = []; // <- TODOS OS JOGADORES ESTÃO DENTRO DESSA VARIAVEL(LISTA)
+// Encontrando o jogador
+const findJogador = jogadores.find(e => e.id_jogador == id_jogador);
+// Encerrando Encontrando o jogador
 
-for (const time of times) {
-    for (const jogador of time.jogadores) {
-        jogadores.push(jogador)
-    }
-};
-// ENCERRANDO o código que cria a lista de todos os jogadores
-
-const findJogador = jogadores.find(e => e.nome === nome)
-
+// Criando o jogador na tela
 divJogador.innerHTML += `
-    <h2>${findJogador.nome}</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Jogador</th>
+                <th>Time</th>
+                <th>Preço</th>
+                <th>Negociação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>
+                ${findJogador.nome}
+            </td>
+            <td> // campo com id do time </td>
+            <td>// campo correto</td>
+            <td>// botão para criar negociação</td>
+        </tbody>
+    </table>
 `
-
-console.log(findJogador);
+// Encerrando Criando o jogador na tela

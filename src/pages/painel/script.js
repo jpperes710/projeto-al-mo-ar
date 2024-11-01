@@ -1,12 +1,14 @@
-import { times } from "../../data/data.js";
+import { times, jogadores } from "../../data/newData.js";
 
 const tbodyJogadores = document.getElementById('tbody-jogadores');
 const inputPesquisar = document.getElementById('input-pesquisar');
 const btnPesquisar = document.getElementById('btn-pesquisar');
 
-const alMocar = times[0];
+// Abaixo lista de jogadores do time Almoçar, filtado pelo ID
+const alMocarJogadores = jogadores.filter((e, i) => e.id_time === 1);
 
-for (const jogador of alMocar.jogadores) {
+
+for (const jogador of alMocarJogadores) {
     tbodyJogadores.innerHTML += `
         <tr>
             <td>${jogador.posicao}</td>
@@ -22,7 +24,7 @@ for (const jogador of alMocar.jogadores) {
 btnPesquisar.addEventListener('click', () => {
     tbodyJogadores.innerHTML = "";
 
-    for (const jogador of alMocar.jogadores) {
+    for (const jogador of alMocarJogadores) {
         if (jogador.nome === inputPesquisar.value) {
             tbodyJogadores.innerHTML += `
             <tr>
