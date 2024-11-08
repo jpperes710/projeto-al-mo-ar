@@ -1,4 +1,4 @@
-import { jogadores } from "../../data/newData.js";
+import { jogadores, times } from "../../data/newData.js";
 
 // Pegando da URL o parametro id
 const parametros = new URLSearchParams(window.location.search);
@@ -10,6 +10,9 @@ const divJogador = document.getElementById('div-jogador');
 // Encontrando o jogador
 const findJogador = jogadores.find(e => e.id_jogador == id_jogador);
 // Encerrando Encontrando o jogador
+
+const findTime = times.find((e, i) => e.id_time === findJogador.id_time)
+console.log(findTime)
 
 // Criando o jogador na tela
 divJogador.innerHTML += `
@@ -26,9 +29,9 @@ divJogador.innerHTML += `
             <td>
                 ${findJogador.nome}
             </td>
-            <td> // campo com id do time </td>
-            <td>// campo correto</td>
-            <td>// botão para criar negociação</td>
+            <td> ${findTime.nome} </td>
+            <td> ${findJogador.preco}</td>
+            <td><a class="btn btn-success">Enviar Proposta</a></td>
         </tbody>
     </table>
 `
