@@ -31,8 +31,30 @@ divJogador.innerHTML += `
             </td>
             <td> ${findTime.nome} </td>
             <td> ${findJogador.preco}</td>
-            <td><a class="btn btn-success">Enviar Proposta</a></td>
+            <td><a class="btn btn-success" id="botao-proposta">Enviar Proposta</a></td>
         </tbody>
     </table>
 `
 // Encerrando Criando o jogador na tela
+
+const botaoProposta = document.getElementById("botao-proposta")
+botaoProposta.addEventListener("click", () => {
+    const valorProposta = document.getElementById("valor-proposta").value
+    
+    if (valorProposta < findJogador.preco) {
+        alert("sua proposta foi recusada")    
+    }
+    if (valorProposta == findJogador.preco) {
+        alert("10%")
+    }
+    if (valorProposta > findJogador.preco && valorProposta < findJogador.preco*2) {
+        alert("40%")
+    }
+    if (valorProposta == findJogador.preco*2) {
+        alert("80%")
+    }
+    if (valorProposta > findJogador.preco*2) {
+        alert("98%")
+    }
+
+})

@@ -10,8 +10,14 @@
 ### Tasks
 
 * [X]  Conseguir pesquisar um dos nossos jogadores.
-* [ ]  Procurar jogadores por Nível e Posição
-* [ ]  Começar a construir a pagina de mercado
+* [X]  Procurar jogadores por Nível e Posição
+* [X]  Começar a construir a pagina de mercado
 
 
 
+* [X] Coletar o valor da proposta 
+* [X] Se valor da proposta for menor que o valor de mercado(Não enviar/recusar)
+* [X] Se valor da proposta for = ao valor de mercado(10% de chance de ser realizada a compra)
+* [X] Se valor da proposta for maior q o valor de mercado(40% de chance de ser realizada a compra)
+* [X] Se valor da proposta for o dobro do valor de mercado(80% de chance de ser realizada a compra)
+* [X] Se valor da proposta for acima do dobro do valor de mercado(98% de chance de ser realizada a compra)
