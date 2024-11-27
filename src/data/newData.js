@@ -3,13 +3,37 @@ export const times = [
         id_time: 1,
         nome: 'Al-Moçar',
         treinador: 'José da Silva',
-        nivel: 5
+        nivel: 7
     },
     {
         id_time: 2,
         nome: 'Real Samba',
         treinador: 'Pedro Souza',
         nivel: 6
+    },
+    {
+        id_time: 3,
+        nome: 'Barcelona Brasileiro,',
+        treinador: 'Antonio Oliveira',
+        nivel: 7
+    },
+    {
+        id_time: 4,
+        nome: 'Milan Paulista',
+        treinador: 'Luca Rossi',
+        nivel: 8
+    },
+    {
+        id_time: 5,
+        nome: 'Bayern do Rio',
+        treinador: 'Klaus Müller',
+        nivel: 7
+    },
+    {
+        id_time: 6,
+        nome: 'Juventus Tropical',
+        treinador: 'Mario Costa',
+        nivel: 8
     }
 ];
 
@@ -258,3 +282,36 @@ export const jogadores = [
     }
 ];
 
+export const campeonato = [
+    {
+        id_partida: 1,
+        id_time_casa: 1,
+        id_time_fora: 3,
+        gols_casa: "",
+        gols_fora: "",
+        status: true, // Não aconteceu a partida
+        data: "01/03/2025"
+    },
+    {
+        id_partida: "",
+        id_time_casa: "",
+        id_time_fora: "",
+        gols_casa: "",
+        gols_fora: "",
+        status: true, // Não aconteceu a partida
+        data: "01/03/2025"
+    }
+]
+
+export const copa = [
+    {
+        id_partida: 1,
+    }
+]
+
+export const liga = [
+    {
+        id_partida: 1,
+        
+    }
+]
