@@ -21,3 +21,5 @@
 * [X] Se valor da proposta for maior q o valor de mercado(40% de chance de ser realizada a compra)
 * [X] Se valor da proposta for o dobro do valor de mercado(80% de chance de ser realizada a compra)
 * [X] Se valor da proposta for acima do dobro do valor de mercado(98% de chance de ser realizada a compra)
+* [ ] Melhorar a base de dados tanto de campeonato quanto de copa
+* [ ] E exbir com map na pagina de campeonato os jogos da copa

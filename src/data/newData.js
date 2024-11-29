@@ -285,20 +285,11 @@ export const jogadores = [
 export const campeonato = [
     {
         id_partida: 1,
-        id_time_casa: 1,
-        id_time_fora: 3,
+        time_casa: "Al-Moçar",
+        time_fora: "Barcelona Brasileiro",
         gols_casa: "",
         gols_fora: "",
-        status: true, // Não aconteceu a partida
-        data: "01/03/2025"
-    },
-    {
-        id_partida: "",
-        id_time_casa: "",
-        id_time_fora: "",
-        gols_casa: "",
-        gols_fora: "",
-        status: true, // Não aconteceu a partida
+        status: false, // Não aconteceu a partida
         data: "01/03/2025"
     }
 ]
