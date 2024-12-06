@@ -6,10 +6,24 @@ campeonato.map((e, index) =>
     divCampeonato.innerHTML += 
     `
         <div>
+            <h6>${e.data} </h6>
             <p>${e.time_casa} ${e.gols_casa} x ${e.gols_fora} ${e.time_fora}</p>
+            
         </div>
     `
 );
 
-// Abaixo fazer o .map da copa semelhante ao do campeonato acima
+const divCopa = document.getElementById('div-copa')
+
+copa.map((e, index) => 
+    divCopa.innerHTML += 
+    `
+        <div>
+            <h6>${e.data} </h6>
+            <p>${e.time_casa} ${e.gols_casa} x ${e.gols_fora} ${e.time_fora} </p>
+        </div>
+    `
+);
+
+
 

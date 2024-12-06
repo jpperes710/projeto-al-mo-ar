@@ -291,13 +291,61 @@ export const campeonato = [
         gols_fora: "",
         status: false, // Não aconteceu a partida
         data: "01/03/2025"
-    }
+    },
+    {
+        id_partida: 2,
+        time_casa: "Real Samba",
+        time_fora: "Milan Paulista",
+        gols_casa: "",
+        gols_fora: "",
+        status: false, // Não aconteceu a partida
+        data: "01/03/2025"
+    },
+    {
+    id_partida: 3,
+    time_casa: "Bayern do Rio",
+    time_fora:"Juventus Tropical",
+    gols_casa: "",
+    gols_fora: "",
+    status: false,
+    data: "01/03/2025"
+
+
+    },
 ]
+
+
+
 
 export const copa = [
     {
         id_partida: 1,
-    }
+        time_casa: "Bayern do Rio",
+        time_fora: "Barcelona Brasileiro",
+        gols_casa: "",
+        gols_fora: "",
+        status: false, // Não aconteceu a partida
+        data: "01/04/2025"
+    },
+
+    {
+        id_partida: 2,
+        time_casa: "Al-Moçar",
+        time_fora: "Real Samba",
+        gols_casa: "",
+        gols_fora: "",
+        status: false, // Não aconteceu a partida
+        data: "01/04/2025"
+    },
+    {
+        id_partida: 3,
+        time_casa: "Milan Paulista",
+        time_fora: "Juventus Tropical",
+        gols_casa: "",
+        gols_fora: "",
+        status: false, // Não aconteceu a partida
+        data: "01/04/2025"
+    },
 ]
 
 export const liga = [
